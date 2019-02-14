@@ -4,12 +4,17 @@
   "description": "electron denemesi",
   "main": "index.js",
   "scripts": {
-    
-    "start": "electron index.js"
+    "start": "electron index.js",
+    "package": "asar pack electron-episode-darwin-x64/electron-episode.app/Contents/Resources/app electron-episode-darwin-x64/electron-episode.app/Contents/Resources/app.asar",
+    "build": "electron-packager . electron-episode && cp rocket.icns electron-episode-darwin-x64/electron-episode.app/Contents/Resources/electron.icns"
   },
   "author": "mehmet cenk yenikoylu <mcy@dotnetmcy.com>",
   "license": "ISC",
   "dependencies": {
     "electron": "^4.0.4"
+  },
+  "devDependencies": {
+    "asar": "^0.14.6",
+    "electron-packager": "^13.0.1"
   }
 }
