@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="electron-episode">
+    <head>
+        <title>my electron app</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://getbootstrap.com/docs/4.3/dist/css/bootstrap.min.css">
+    </head>
+    <body>
+       
+        <div class="container" id="form-container">
+<form>
+    <textarea class="form-control" placeholder="file contents..." rows="10"></textarea>
+</form>
+<button id="openButton" class="btn btn-default">Open</button>
+<button id="exitButton" class="btn btn-danger">Exit</button>
+
+        </div>
+        <script>
+            require('./renderer.js');</script>
+    
+        </body>
+</html>
